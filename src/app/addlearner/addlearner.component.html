@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row justify-content-center mt-2 pt-5  ">
+      <div class="col-6">
+          <form  [formGroup]="addlearnerForm" >
+            
+            <h3 style="text-align: center;color:  #22215d;;">Add Learner</h3>
+         
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Learner Id</label>
+              <input type="text" class="form-control" id="formGroupExampleInput"formControlName="learnerid"  >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" formControlName="name"   >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput3" class="form-label">Course</label>
+              <input type="text" class="form-control" id="formGroupExampleInput3" formControlName="course"  >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput4" class="form-label">Project</label>
+              <input type="text" class="form-control" id="formGroupExampleInput4"  formControlName="project"  >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput4" class="form-label">Batch</label>
+              <input type="text" class="form-control" id="formGroupExampleInput4"  formControlName="batch"  >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput4" class="form-label">Course Status</label>
+              <input type="text" class="form-control" id="formGroupExampleInput4"  formControlName="coursestatus"  >
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput4" class="form-label">Placement Status</label>
+              <input type="text" class="form-control" id="formGroupExampleInput4"  formControlName="placementstatus"  >
+            </div>
+            
+           <br>
+            <button type="submit" class="btn btn-success" (click)="clickadd()">Submit</button>
+
+          </form>
+      </div>
+  </div>
+</div>

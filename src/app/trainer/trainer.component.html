@@ -1,0 +1,36 @@
+
+<div class="container">
+  <h1 class="  text-center mt-5"  id="dboard" >Learner Dashboard</h1>
+
+<table class="table table-striped  mt-5">
+  <thead>
+    <tr>
+      <th scope="col">Learner Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Course Name</th>
+      <th scope="col">Project</th>
+      <th scope="col">Batch</th>
+      <th scope="col">Course Status</th>
+      <th scope="col">Placement Status</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of learner" >
+      <th scope="row" >{{item.learnerid}}</th>
+      <td>{{item.name}}</td>
+      <td>{{item.course}}</td>
+      <td>{{item. project}}</td>
+      <td>{{item. batch}}</td>
+      <td>{{item. coursestatus}}</td>
+      <td>{{item. placementstatus}}</td>
+      <td><i class="bi bi-pencil-square text-primary"(click)="editlearner(item._id)"></i></td>
+      <td><i class="bi bi-trash3-fill text-danger" (click)="deletelearner(item._id)"></i></td> 
+    </tr>   
+  </tbody>
+</table>
+<button class="btn btn-success" routerLink="/add">add learner</button>
+
+</div>

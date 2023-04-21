@@ -1,0 +1,22 @@
+#dboard{
+    color: rgb(9, 96, 101);
+}
+
+
+.table thead tr {
+  background-color: rgb(99, 149, 110);
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgb(205, 227, 192);
+  }
+  
+  
+.table {
+    border: 1px solid rgb(205, 227, 192); 
+  }
+  
+
+  
+  
